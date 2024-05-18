@@ -5,10 +5,10 @@ import { CardSet } from "../types/cards.types";
 export const getSetCardsFromJson = (jsonCard: string): CardSet => {
   const cardSet = JSON.parse(jsonCard);
 
-  return cardSet as CardSet;
+  return cardSet;
 };
 
-export const extractJsonSetCardsFiles = async (): Promise<CardSet[]> => {
+export const parseCardSetFiles = async (): Promise<CardSet[]> => {
   const path = resolve(process.cwd(), "assets", "cards");
   const files = await readdir(path);
 

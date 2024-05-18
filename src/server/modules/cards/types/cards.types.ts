@@ -7,7 +7,9 @@ export interface BlackCard extends Card {
   pick: number;
 }
 
-export interface WhiteCard extends Card {}
+export interface WhiteCard extends Card {
+  text: string;
+}
 
 export interface CardSet {
   id: string;
