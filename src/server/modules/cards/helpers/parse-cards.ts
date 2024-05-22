@@ -1,6 +1,6 @@
 import { readdir, readFile } from "fs/promises";
 import { resolve } from "path";
-import { CardSet } from "../types/cards.types";
+import { CardSet } from "../../../graphql/generate/resolver-types.types";
 
 export const getSetCardsFromJson = (jsonCard: string): CardSet => {
   const cardSet = JSON.parse(jsonCard);

@@ -1,11 +1,6 @@
-import { parseCardSetFiles } from "../../modules/cards/helpers/parse-cards.js";
+import { Resolvers } from "../generate/resolver-types.types";
+import Query from "./queries.js";
 
-const CardResolvers = {
-  Query: {
-    cardSets() {
-      return parseCardSetFiles();
-    },
-  },
-};
+const resolvers: Resolvers = { Query };
 
-export default CardResolvers;
+export default resolvers;
